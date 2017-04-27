@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Headless chrome with capybara}
   spec.description   = %q{Headless chrome with capybara}
   spec.homepage      = "https://github.com/rentalname/dullahan"
+  spec.licenses      = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -29,9 +30,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'capybara'
-  spec.add_dependency 'selenium-webdriver'
-  spec.add_dependency 'imgkit'
+  spec.add_runtime_dependency 'capybara', "~> 2.0"
+  spec.add_runtime_dependency 'selenium-webdriver', "~> 3.4"
+  spec.add_runtime_dependency 'imgkit', '~> 1.6'
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
