@@ -1,4 +1,4 @@
-### https://raw.github.com/github/gitignore/c0c1a480a906df0e023f3250cf2ad82f1612be67/ruby.gitignore
+### https://raw.github.com/github/gitignore/df6a05e29979079fcb5d602b4dc260f34383eb92/ruby.gitignore
 
 *.gem
 *.rbc
@@ -47,12 +47,13 @@ build-iPhoneSimulator/
 # Gemfile.lock
 # .ruby-version
 # .ruby-gemset
+.rspec_status
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 
 
-### https://raw.github.com/github/gitignore/c0c1a480a906df0e023f3250cf2ad82f1612be67/Global/macos.gitignore
+### https://raw.github.com/github/gitignore/df6a05e29979079fcb5d602b4dc260f34383eb92/Global/macos.gitignore
 
 *.DS_Store
 .AppleDouble

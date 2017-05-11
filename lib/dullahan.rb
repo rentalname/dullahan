@@ -3,10 +3,12 @@ require "dullahan/agent"
 require "capybara"
 require 'selenium-webdriver'
 require 'imgkit'
+
+require 'pry'
 module Dullahan
   extend self
 
-  def setup(bin:, args: %w{--headless --disable-gpu})
+  def setup(bin:, args: %w{--headless --disable-gpu --screenshot})
     Capybara.register_driver :dullahan do |app|
       caps = Selenium::WebDriver::Remote::Capabilities.chrome(
         "chromeOptions": {
